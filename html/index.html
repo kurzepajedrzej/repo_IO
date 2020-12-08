@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+<head>
+	<meta charset = "utf-8" />
+	<title>Some Hotel</title>
+	<meta name = "description" content = "IO project" />
+	<meta nane = "keywords" content = "tag" />
+	
+	<link rel = "stylesheet" href = "style.css" type = "text/css">
+	<link rel = "stylesheet" href = "fontello/css/fontello.css" type = "text/css">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
+	
+	<script type = "text/javascript">
+	
+	function count(){
+		var today = new Date();
+		
+		var day = today.getDate();
+		var month = today.getMonth() + 1;
+		var year = today.getFullYear();
+		
+		var hour = today.getHours();
+		if(hour < 10){
+			hour = "0" + hour;
+		}
+		var minute = today.getMinutes();
+		if(minute < 10){
+			minute = "0" + minute;
+		}
+		var second = today.getSeconds();
+		if(second < 10){
+			second = "0" + second;
+		}
+		document.getElementById("watch").innerHTML = day + "/" + month + "/" + year + " | " + hour + ":" + minute + ":" + second;
+		
+		setTimeout("count()", 1000);
+	}
+	</script>
+	
+</head>
+
+<body onload = "count();">
+	<div id = "listContainer">
+		<div class = "listButton">Pokoje</div>
+		<div class = "listButton">Dodatkowe pakiety</div>
+		<div class = "listButton">Kontakt</div>
+	</div>
+	
+	<div id = "logo">
+		<img src="hotel-logo.png" width="220" height="260">
+		<div id = "watch"></div>
+	</div>
+
+	
+	<script type = "text/javascript">
+	</script>
+
+</body>
+
+</html>
