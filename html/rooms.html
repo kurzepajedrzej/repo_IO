@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+<head>
+	<meta charset = "utf-8" />
+	<title>Pokoje</title>
+	<meta name = "description" content = "IO project" />
+	<meta nane = "keywords" content = "tag" />
+	
+	<link rel = "stylesheet" href = "styleRooms.css" type = "text/css">
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
+	
+	<script type = "text/javascript">
+		var number = Math.floor(Math.random() * 3) + 1;
+		
+		function changeSlide(){
+			number++;
+			if(number > 3){
+				number = 1;
+			}
+			document.getElementsByClassName("tileBack")[0].style.backgroundImage = "url(\"hotel_standard/" + number + ".png\")";
+			document.getElementsByClassName("tileBack")[1].style.backgroundImage = "url(\"hotel_minimalistic/" + number + ".jpeg\")";
+			document.getElementsByClassName("tileBack")[2].style.backgroundImage = "url(\"hotel_poor/" + number + ".png\")";
+			document.getElementsByClassName("tileBack")[3].style.backgroundImage = "url(\"hotel_exclusive/" + number + ".png\")";
+			setTimeout("changeSlide()", 3000);
+		}
+	</script>
+</head>
+
+<body onload = "changeSlide()">
+	<div id = "listContainer">
+		<a href = "rooms.html">
+			<div class = "listButton">Pokoje</div>
+		</a>
+		<div class = "listButton">Dodatkowe pakiety</div>
+		<div class = "listButton">Kontakt</div>
+		<div style = "clear:both"></div>
+	</div>
+	<a href = "index.html">
+		<div id = "logo">
+			<img src = "hotel-logo.png" width = "220" height = "260"/>
+		</div>
+	</a>
+	
+	<div class = "main">
+		<div class = "tile">
+			<div class = "tileBack">
+				<div class = "reserveButton">Standard - zarezerwuj</div>
+			</div>
+		</div>	
+		<div class = "tile">
+			<div class = "tileBack">
+				<div class = "reserveButton">Minimalistic - zarezerwuj</div>
+			</div>
+		</div>	
+		<div class = "tile">
+			<div class = "tileBack">
+				<div class = "reserveButton">Pracowniczy - zarezerwuj</div>
+			</div>
+		</div>	
+		<div class = "tile" style = "margin-left: 510px">
+			<div class = "tileBack">
+				<div class = "reserveButton">Exclusive - zarezerwuj</div>
+			</div>
+		</div>	
+			
+	</div>
+
+</body>
+
+</html>
