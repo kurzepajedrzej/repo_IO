@@ -22,11 +22,10 @@
 	padding-right: 25px;
 	font-size: 20px;
 	float: left;
+	transition: all .3s ease-in-out;
 }
 
-.listButton:hover{
-	opacity: 0.8;
-}
+.listButton:hover { opacity: 0.8; }
 
 #logo{
 	top: 20px;
@@ -64,8 +63,6 @@
 	opacity: 0.6;
 }
 
-.reserveButton:hover{
-	opacity: 0.8;
-}
+.reserveButton:hover { opacity: 0.8; }
 
 

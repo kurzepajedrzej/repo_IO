@@ -11,8 +11,14 @@
 	<link rel = "stylesheet" href = "styleRooms.css" type = "text/css">
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
 	
+	<script src="jquery-3.5.1.min.js"></script>
+	
 	<script type = "text/javascript">
 		var number = Math.floor(Math.random() * 3) + 1;
+		
+		function out(){
+			$(".tileBack").fadeOut(500);
+		}
 		
 		function changeSlide(){
 			number++;
@@ -23,7 +29,11 @@
 			document.getElementsByClassName("tileBack")[1].style.backgroundImage = "url(\"hotel_minimalistic/" + number + ".jpeg\")";
 			document.getElementsByClassName("tileBack")[2].style.backgroundImage = "url(\"hotel_poor/" + number + ".png\")";
 			document.getElementsByClassName("tileBack")[3].style.backgroundImage = "url(\"hotel_exclusive/" + number + ".png\")";
+			
+			$(".tileBack").fadeIn(500);
+			
 			setTimeout("changeSlide()", 3000);
+			setTimeout("out()", 2500);
 		}
 	</script>
 </head>
