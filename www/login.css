@@ -1,0 +1,21 @@
+﻿body{
+	font-family: 'JetBrains Mono', monospace;
+	background-image: url("loginBckgrnd.jpg");
+}
+
+#loginContainer{
+	text-align: center;
+	color: white;
+	position: absolute;
+	width: 600px;
+	height: 150px;
+	top: 30%;
+ 	left: 50%;
+ 	margin: -75px 0 0 -300px;
+}
+
+#logo {
+	position: absolute;
+	width: 220px;
+	top: 80px; 
+}

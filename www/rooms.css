@@ -27,9 +27,10 @@
 
 .listButton:hover { opacity: 0.8; }
 
-#logo{
-	top: 20px;
-	float: left;
+#logo {
+	position: absolute;
+	width: 220px;
+	top: 80px; 
 }
 
 .main{

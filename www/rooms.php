@@ -4,11 +4,11 @@
 
 <head>
 	<meta charset = "utf-8" />
-	<title>Pokoje</title>
+	<title>Some Hotel | Rooms</title>
 	<meta name = "description" content = "IO project" />
 	<meta nane = "keywords" content = "tag" />
 	
-	<link rel = "stylesheet" href = "styleRooms.css" type = "text/css">
+	<link rel = "stylesheet" href = "rooms.css" type = "text/css">
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap" rel="stylesheet">
 	
 	<script src="jquery-3.5.1.min.js"></script>
@@ -40,41 +40,43 @@
 
 <body onload = "changeSlide()">
 	<div id = "listContainer">
-		<a href = "rooms.html">
+		<a href = "rooms.php">
 			<div class = "listButton">Pokoje</div>
 		</a>
 		<div class = "listButton">Dodatkowe pakiety</div>
 		<div class = "listButton">Kontakt</div>
 		<div style = "clear:both"></div>
 	</div>
-	<a href = "index.html">
-		<div id = "logo">
+	
+	<div id = "logo">
+		<a href = "index.php">
 			<img src = "hotel-logo.png" width = "220" height = "260"/>
-		</div>
-	</a>
+		</a>
+	</div>
 	
 	<div class = "main">
-		<div class = "tile">
-			<div class = "tileBack">
-				<div class = "reserveButton">Standard - zarezerwuj</div>
-			</div>
-		</div>	
-		<div class = "tile">
-			<div class = "tileBack">
-				<div class = "reserveButton">Minimalistic - zarezerwuj</div>
-			</div>
-		</div>	
-		<div class = "tile">
-			<div class = "tileBack">
-				<div class = "reserveButton">Pracowniczy - zarezerwuj</div>
-			</div>
-		</div>	
-		<div class = "tile" style = "margin-left: 510px">
-			<div class = "tileBack">
-				<div class = "reserveButton">Exclusive - zarezerwuj</div>
-			</div>
-		</div>	
-			
+		<form action = "loginPage.php" method = "post">
+			<div class = "tile">
+				<div class = "tileBack">
+					<input type = "submit" value = "Standard - zarezerwuj" name = "Standard"/>
+				</div>
+			</div>	
+			<div class = "tile">
+				<div class = "tileBack">
+					<input type = "submit" value = "Minimalistic - zarezerwuj" name = "Minimalistic"/>
+				</div>
+			</div>	
+			<div class = "tile">
+				<div class = "tileBack">
+					<input type = "submit" value = "Pracowniczy - zarezerwuj" name = "Pracowniczy"/>
+				</div>
+			</div>	
+			<div class = "tile" style = "margin-left: 510px">
+				<div class = "tileBack">
+					<input type = "submit" value = "Exclusive - zarezerwuj" name = "Exclusive"/>
+				</div>
+			</div>	
+		</form>	
 	</div>
 
 </body>
